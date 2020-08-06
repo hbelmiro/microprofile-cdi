@@ -5,15 +5,16 @@ import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("/hello")
+@Path("/")
 @Singleton
-public class HelloController {
+public class PortifolioController {
 
     @Inject
-    private Stocks stocks;
+    private Portifolio portifolio;
 
     @GET
     public String sayHello() {
-        return "Hello World " + this.stocks.price("AAPL");
+        return "Current profit is: " + portifolio.computePortifolioProfit();
     }
+
 }
