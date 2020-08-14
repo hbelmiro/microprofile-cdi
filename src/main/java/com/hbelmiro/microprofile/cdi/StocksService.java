@@ -4,6 +4,6 @@ import java.math.BigDecimal;
 
 public interface StocksService {
 
-    BigDecimal getActualValue(String ticker);
+    BigDecimal getCurrentValue(String ticker);
 
 }

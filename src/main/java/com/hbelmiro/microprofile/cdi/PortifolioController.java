@@ -1,20 +1,21 @@
 package com.hbelmiro.microprofile.cdi;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import java.math.BigDecimal;
 
 @Path("/")
-@Singleton
+@ApplicationScoped
 public class PortifolioController {
 
     @Inject
-    private Portifolio portifolio;
+    Portifolio portifolio;
 
     @GET
     public String sayHello() {
-        return "Current profit is: " + portifolio.computePortifolioProfit();
+        return "Current profit is: " + portifolio.computePortifolioProfit("Helber");
     }
 
 }

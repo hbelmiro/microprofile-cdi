@@ -8,12 +8,12 @@ public final class Position {
 
     private final BigDecimal quantity;
 
-    private final BigDecimal costBasis;
+    private final BigDecimal averagePrice;
 
-    public Position(String ticker, BigDecimal quantity, BigDecimal costBasis) {
+    public Position(String ticker, BigDecimal quantity, BigDecimal averagePrice) {
         this.ticker = ticker;
         this.quantity = quantity;
-        this.costBasis = costBasis;
+        this.averagePrice = averagePrice;
     }
 
     public String getTicker() {
@@ -24,8 +24,8 @@ public final class Position {
         return this.quantity;
     }
 
-    public BigDecimal getCostBasis() {
-        return this.costBasis;
+    public BigDecimal getAveragePrice() {
+        return this.averagePrice;
     }
 
 }

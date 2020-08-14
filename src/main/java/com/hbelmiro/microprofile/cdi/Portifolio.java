@@ -1,31 +1,32 @@
 package com.hbelmiro.microprofile.cdi;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.List;
 
+@ApplicationScoped
 public class Portifolio {
 
+    private final StocksService stocksService;
+
+    private final PositionsLoader positionsLoader;
+
     @Inject
-    private StocksService stocksService;
+    Portifolio(StocksService stocksService, PositionsLoader positionsLoader) {
+        this.stocksService = stocksService;
+        this.positionsLoader = positionsLoader;
+    }
 
-    private final List<Position> positions = Arrays.asList(
-            new Position("AAPL", BigDecimal.TEN, new BigDecimal("100.25")),
-            new Position("GOOG", new BigDecimal(3), new BigDecimal(1000)),
-            new Position("AMZN", new BigDecimal(2), new BigDecimal(2500))
-    );
-
-    public BigDecimal computePortifolioProfit() {
-        return this.positions.stream()
-                             .map(this::computePositionProfit)
-                             .reduce(BigDecimal::add)
-                             .orElse(BigDecimal.ZERO);
+    public BigDecimal computePortifolioProfit(String investorName) {
+        return this.positionsLoader.load(investorName).stream()
+                                   .map(this::computePositionProfit)
+                                   .reduce(BigDecimal::add)
+                                   .orElse(BigDecimal.ZERO);
     }
 
     private BigDecimal computePositionProfit(Position position) {
-        return this.stocksService.getActualValue(position.getTicker())
-                                 .subtract(position.getCostBasis())
+        return this.stocksService.getCurrentValue(position.getTicker())
+                                 .subtract(position.getAveragePrice())
                                  .multiply(position.getQuantity());
     }
 
