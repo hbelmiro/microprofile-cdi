@@ -7,16 +7,16 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/")
+@Path("/profit")
 @ApplicationScoped
 @Produces(MediaType.TEXT_PLAIN)
-public class PortfolioController {
+public class ProfitResource {
 
     @Inject
     Portfolio portfolio;
 
     @GET
-    public String printProfit() {
+    public String get() {
         return "Current profit is: " + this.portfolio.computePortfolioProfit();
     }
 

@@ -1,4 +1,4 @@
-package com.hbelmiro;
+package com.hbelmiro.microprofile.cdi;
 
 import io.quarkus.test.junit.NativeImageTest;
 

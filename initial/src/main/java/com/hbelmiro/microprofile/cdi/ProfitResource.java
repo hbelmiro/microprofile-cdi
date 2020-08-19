@@ -5,14 +5,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/")
+@Path("/profit")
 @Produces(MediaType.TEXT_PLAIN)
-public class PortfolioController {
+public class ProfitResource {
 
     private final Portfolio portfolio = new Portfolio();
 
     @GET
-    public String printProfit() {
+    public String get() {
         return "Current profit is: " + this.portfolio.computePortfolioProfit();
     }
 
