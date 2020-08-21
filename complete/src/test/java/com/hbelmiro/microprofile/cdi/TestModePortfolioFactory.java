@@ -11,12 +11,12 @@ public class TestModePortfolioFactory {
 
     @Inject
     @TestMode
-    PositionsLoader positionsLoader;
+    PositionsLoader fakePositionsLoader;
 
     @TestMode
     @Produces
     public Portfolio createPortfolio() {
-        return new Portfolio(this.fakeStocksService, this.positionsLoader);
+        return new Portfolio(this.fakeStocksService, this.fakePositionsLoader);
     }
 
 }
