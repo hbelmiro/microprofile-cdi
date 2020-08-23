@@ -11,8 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @QuarkusTest
 class PortfolioTest {
 
-    @TestMode
     @Inject
+    @TestMode
     Portfolio portfolio;
 
     @Test

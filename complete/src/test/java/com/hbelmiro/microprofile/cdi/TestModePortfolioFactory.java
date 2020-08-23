@@ -13,8 +13,8 @@ public class TestModePortfolioFactory {
     @TestMode
     PositionsLoader fakePositionsLoader;
 
-    @TestMode
     @Produces
+    @TestMode
     public Portfolio createPortfolio() {
         return new Portfolio(this.fakeStocksService, this.fakePositionsLoader);
     }
