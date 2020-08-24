@@ -1,0 +1,1 @@
+This project is the source code for the application created in my blog post at: https://hbelmiro.com/en/blog/2020/08/24/creating-testable-applications-with-microprofile-and-cdi/
