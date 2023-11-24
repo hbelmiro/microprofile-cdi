@@ -1,5 +1,5 @@
-com/hbelmiro/microprofile/cdi/PortifolioTest.class
+com/hbelmiro/microprofile/cdi/PortfolioTest.class
 com/hbelmiro/microprofile/cdi/TestMode.class
-com/hbelmiro/microprofile/cdi/TestModePortifolioFactory.class
+com/hbelmiro/microprofile/cdi/TestModePortfolioFactory.class
 com/hbelmiro/microprofile/cdi/FakeStocksService.class
 com/hbelmiro/microprofile/cdi/FakePositionsLoader.class

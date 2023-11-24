@@ -1,7 +1,7 @@
 package com.hbelmiro.microprofile.cdi;
 
-import javax.enterprise.inject.Produces;
-import javax.inject.Inject;
+import jakarta.enterprise.inject.Produces;
+import jakarta.inject.Inject;
 
 public class TestModePortfolioFactory {
 

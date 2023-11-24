@@ -1,5 +1,5 @@
-/Users/helber/Projects/Blogs/Personal/microprofile-cdi-tomee/complete/src/test/java/com/hbelmiro/microprofile/cdi/PortifolioTest.java
-/Users/helber/Projects/Blogs/Personal/microprofile-cdi-tomee/complete/src/test/java/com/hbelmiro/microprofile/cdi/FakePositionsLoader.java
-/Users/helber/Projects/Blogs/Personal/microprofile-cdi-tomee/complete/src/test/java/com/hbelmiro/microprofile/cdi/TestModePortifolioFactory.java
-/Users/helber/Projects/Blogs/Personal/microprofile-cdi-tomee/complete/src/test/java/com/hbelmiro/microprofile/cdi/TestMode.java
-/Users/helber/Projects/Blogs/Personal/microprofile-cdi-tomee/complete/src/test/java/com/hbelmiro/microprofile/cdi/FakeStocksService.java
+/home/hbelmiro/dev/hbelmiro/microprofile-cdi/complete/src/test/java/com/hbelmiro/microprofile/cdi/TestMode.java
+/home/hbelmiro/dev/hbelmiro/microprofile-cdi/complete/src/test/java/com/hbelmiro/microprofile/cdi/FakePositionsLoader.java
+/home/hbelmiro/dev/hbelmiro/microprofile-cdi/complete/src/test/java/com/hbelmiro/microprofile/cdi/TestModePortfolioFactory.java
+/home/hbelmiro/dev/hbelmiro/microprofile-cdi/complete/src/test/java/com/hbelmiro/microprofile/cdi/FakeStocksService.java
+/home/hbelmiro/dev/hbelmiro/microprofile-cdi/complete/src/test/java/com/hbelmiro/microprofile/cdi/PortfolioTest.java
