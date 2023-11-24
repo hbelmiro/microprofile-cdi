@@ -1,7 +1,7 @@
 package com.hbelmiro.microprofile.cdi;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import java.math.BigDecimal;
 
 @ApplicationScoped

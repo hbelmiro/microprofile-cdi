@@ -25,3 +25,5 @@ hs_err_pid*
 .idea/*
 complete/.idea/*
 initial/.idea/*
+/complete/target/
+/initial/target/
